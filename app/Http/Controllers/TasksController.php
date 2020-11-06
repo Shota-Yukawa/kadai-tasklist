@@ -7,6 +7,15 @@ use App\Task;
 
 class TasksController extends Controller
 {
+    
+    public function welcome()
+    {
+
+        // メッセージ一覧ビューでそれを表示
+        return view('welcome', [
+            
+        ]);
+    }
     /**
      * Display a listing of the resource.
      *
