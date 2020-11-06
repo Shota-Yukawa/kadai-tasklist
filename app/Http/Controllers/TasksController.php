@@ -68,6 +68,9 @@ class TasksController extends Controller
         
         //トップページにリダイレクト
         return redirect('/');
+        // return view('tasks.index', [
+        //     'tasks' => $tasks,
+        // ]);
     }
 
     /**
