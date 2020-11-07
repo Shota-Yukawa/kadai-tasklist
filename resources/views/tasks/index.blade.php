@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
+@section('content') 
     @if (count($tasks) > 0)
         <table class="table table-striped">
             <thead>
