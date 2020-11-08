@@ -58,6 +58,8 @@ class TasksController extends Controller
     {
         $task = new Task;
         
+        // $tasks = Task::all();
+        
         //メッセージ作成ビューを表示
         return view('tasks.create', [
             'task' => $task,
@@ -84,7 +86,7 @@ class TasksController extends Controller
             'content' => $request->content,
         ]);
 
-        return back();
+        return redirect('/');
         
         // $task = new Task;
         // $task->status = $request->status;
@@ -119,7 +121,7 @@ class TasksController extends Controller
          }
          else {
             // 前のURLへリダイレクトさせる
-            return back();
+            return redirect('/');
         }
 
     }

@@ -33,6 +33,5 @@ class AddUserIdToTasksTable extends Migration
             $table->dropForeign(['user_id']);
         });
         
-       
     }
 }
