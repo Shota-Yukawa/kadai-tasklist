@@ -161,7 +161,6 @@ class TasksController extends Controller
             'content' => 'required|max:255',
         ]);
         
-        //  if (\Auth::id() === $task->user_id) {
             //idの値でメッセージを検索して取得
             $task = Task::findOrFail($id);
             // メッセージを更新
@@ -171,11 +170,6 @@ class TasksController extends Controller
             
              // トップページへリダイレクトさせる
             return redirect('/');
-        // } 
-        // else {
-        //     // 前のURLへリダイレクトさせる
-        //     return back();
-        // }
 
        
     }
