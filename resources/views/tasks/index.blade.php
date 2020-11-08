@@ -21,6 +21,7 @@
                     @endforeach
                 </tbody>
             </table>
+             {!! link_to_route('tasks.create', '新規タスクの追加', [], ['class' => 'btn btn-primary']) !!}
         @endif
     @else 
      <div class="center jumbotron">
@@ -32,6 +33,5 @@
         </div>
     @endif
     
-    {!! link_to_route('tasks.create', '新規タスクの追加', [], ['class' => 'btn btn-primary']) !!}
-    
+
 @endsection
